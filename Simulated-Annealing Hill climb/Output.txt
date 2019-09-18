@@ -1,0 +1,417 @@
+Start State:
+ 1 8 2
+0 4 3
+7 6 5
+Goal State:
+ 1 2 3
+4 5 6
+7 8 0
+
+Start state:
+1 8 2
+0 4 3
+7 6 5
+
+Goal state:
+1 2 3
+4 5 6
+7 8 0
+
+Based on Displaced tiles h1(n) Heuristic SEARCH:
+
+Parent State:
+1 8 2
+0 4 3
+7 6 5
+h_val: 7
+
+Next State(s): 
+0 8 2
+1 4 3
+7 6 5
+h_val_next: 8 
+
+1 8 2
+7 4 3
+0 6 5
+h_val_next: 8 
+
+1 8 2
+4 0 3
+7 6 5
+h_val_next: 6 
+
+
+Parent State:
+1 8 2
+4 0 3
+7 6 5
+h_val: 6
+
+Next State(s): 
+1 0 2
+4 8 3
+7 6 5
+h_val_next: 6 
+
+1 8 2
+4 6 3
+7 0 5
+h_val_next: 6 
+
+1 8 2
+0 4 3
+7 6 5
+h_val_next: 7 
+
+1 8 2
+4 3 0
+7 6 5
+h_val_next: 6 
+
+Solution not found.
+
+(Sub)Optimal path:
+1 8 2
+0 4 3
+7 6 5
+-->
+1 8 2
+4 0 3
+7 6 5
+
+Number of states in the path: 2
+Number of states explored: 9
+Total time taken: 0.0003657341003417969
+*************************************************
+
+Based on manhattan_heuristic h2(n) Heuristic SEARCH:
+
+Parent State:
+1 8 2
+0 4 3
+7 6 5
+h_val: 9
+
+Next State(s): 
+0 8 2
+1 4 3
+7 6 5
+h_val_next: 10 
+
+1 8 2
+7 4 3
+0 6 5
+h_val_next: 10 
+
+1 8 2
+4 0 3
+7 6 5
+h_val_next: 8 
+
+
+Parent State:
+1 8 2
+4 0 3
+7 6 5
+h_val: 8
+
+Next State(s): 
+1 0 2
+4 8 3
+7 6 5
+h_val_next: 7 
+
+
+Parent State:
+1 0 2
+4 8 3
+7 6 5
+h_val: 7
+
+Next State(s): 
+1 8 2
+4 0 3
+7 6 5
+h_val_next: 8 
+
+0 1 2
+4 8 3
+7 6 5
+h_val_next: 8 
+
+1 2 0
+4 8 3
+7 6 5
+h_val_next: 6 
+
+
+Parent State:
+1 2 0
+4 8 3
+7 6 5
+h_val: 6
+
+Next State(s): 
+1 2 3
+4 8 0
+7 6 5
+h_val_next: 5 
+
+
+Parent State:
+1 2 3
+4 8 0
+7 6 5
+h_val: 5
+
+Next State(s): 
+1 2 0
+4 8 3
+7 6 5
+h_val_next: 6 
+
+1 2 3
+4 8 5
+7 6 0
+h_val_next: 4 
+
+
+Parent State:
+1 2 3
+4 8 5
+7 6 0
+h_val: 4
+
+Next State(s): 
+1 2 3
+4 8 0
+7 6 5
+h_val_next: 5 
+
+1 2 3
+4 8 5
+7 0 6
+h_val_next: 3 
+
+
+Parent State:
+1 2 3
+4 8 5
+7 0 6
+h_val: 3
+
+Next State(s): 
+1 2 3
+4 0 5
+7 8 6
+h_val_next: 2 
+
+
+Parent State:
+1 2 3
+4 0 5
+7 8 6
+h_val: 2
+
+Next State(s): 
+1 0 3
+4 2 5
+7 8 6
+h_val_next: 3 
+
+1 2 3
+4 8 5
+7 0 6
+h_val_next: 3 
+
+1 2 3
+0 4 5
+7 8 6
+h_val_next: 3 
+
+1 2 3
+4 5 0
+7 8 6
+h_val_next: 1 
+
+
+Parent State:
+1 2 3
+4 5 0
+7 8 6
+h_val: 1
+
+Next State(s): 
+1 2 0
+4 5 3
+7 8 6
+h_val_next: 2 
+
+1 2 3
+4 5 6
+7 8 0
+h_val_next: 0 
+
+Solved.
+
+(Sub)Optimal path:
+1 8 2
+0 4 3
+7 6 5
+-->
+1 8 2
+4 0 3
+7 6 5
+-->
+1 0 2
+4 8 3
+7 6 5
+-->
+1 2 0
+4 8 3
+7 6 5
+-->
+1 2 3
+4 8 0
+7 6 5
+-->
+1 2 3
+4 8 5
+7 6 0
+-->
+1 2 3
+4 8 5
+7 0 6
+-->
+1 2 3
+4 0 5
+7 8 6
+-->
+1 2 3
+4 5 0
+7 8 6
+-->
+1 2 3
+4 5 6
+7 8 0
+
+Number of states in the path: 10
+Number of states explored: 27
+Total time taken: 0.0018405914306640625
+*************************************************
+
+For h3(n)=h1(n)+h2(n) Heuristic SEARCH:
+
+Parent State:
+1 8 2
+0 4 3
+7 6 5
+h_val: 16
+
+Next State(s): 
+0 8 2
+1 4 3
+7 6 5
+h_val_next: 18 
+
+1 8 2
+7 4 3
+0 6 5
+h_val_next: 18 
+
+1 8 2
+4 0 3
+7 6 5
+h_val_next: 14 
+
+
+Parent State:
+1 8 2
+4 0 3
+7 6 5
+h_val: 14
+
+Next State(s): 
+1 0 2
+4 8 3
+7 6 5
+h_val_next: 13 
+
+
+Parent State:
+1 0 2
+4 8 3
+7 6 5
+h_val: 13
+
+Next State(s): 
+1 8 2
+4 0 3
+7 6 5
+h_val_next: 14 
+
+0 1 2
+4 8 3
+7 6 5
+h_val_next: 15 
+
+1 2 0
+4 8 3
+7 6 5
+h_val_next: 11 
+
+
+Parent State:
+1 2 0
+4 8 3
+7 6 5
+h_val: 11
+
+Next State(s): 
+1 2 3
+4 8 0
+7 6 5
+h_val_next: 9 
+
+
+Parent State:
+1 2 3
+4 8 0
+7 6 5
+h_val: 9
+
+Next State(s): 
+1 2 0
+4 8 3
+7 6 5
+h_val_next: 11 
+
+1 2 3
+4 8 5
+7 6 0
+h_val_next: 7 
+
+
+Parent State:
+1 2 3
+4 8 5
+7 6 0
+h_val: 7
+
+Next State(s): 
+1 2 3
+4 8 0
+7 6 5
+h_val_next: 9 
+
+1 2 3
+4 8 5
+7 0 6
+h_val_next: 7 
+
+
+Number of states in the path: 6
+Number of states explored: 17
+Total time taken: 0.0011432170867919922
+*************************************************
